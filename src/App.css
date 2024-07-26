@@ -7,6 +7,20 @@
   src: local("Druk Wide Bold Bold"), url("DrukWideBold.woff") format("woff");
 }
 
+@font-face {
+  font-family: "WfSemibold";
+  src: url("/src/WfSemibold.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "WfRegular";
+  src: url("/src/WfRegular.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -54,9 +68,9 @@ body {
   -webkit-text-stroke: 1px white;
 }
 .font-for-intro {
-  font-size: 4.5rem;
+  font-size: 4.2rem;
   line-height: 1.2;
-  /* font-family: "Druk Wide Bold Bold", sans-serif; */
+  font-family: "WfSemibold", sans-serif;
 }
 
 .WhoIsYohan-container {
@@ -101,9 +115,11 @@ body {
   max-height: 100%;
 }
 
-/* .My-full-name {
-  font-size
-} */
+.My-full-name {
+  font-family: "Druke Wide", sans-serif;
+  font-family: "Druke Wide", sans-serif;
+  font-family: "Druke Wide", sans-serif;
+}
 .Hover-Section-Container > a:nth-of-type(1) {
   transform: perspective(500px) rotateY(-30deg);
   transition: 0.5s ease;
