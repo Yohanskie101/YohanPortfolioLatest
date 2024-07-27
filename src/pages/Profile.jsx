@@ -4,6 +4,7 @@ import LogoText from "../components/LogoText";
 import Introduction from "../components/Introduction";
 import WhoIsYohan from "../components/WhoIsYohan";
 import Myfooter from "../components/MyFooter";
+import Projects from "./Projects";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import transition from "../transition";
@@ -20,6 +21,7 @@ function Profile() {
         <LogoText />
         <Introduction />
         <WhoIsYohan />
+        <Projects />
         <Myfooter />
       </div>
     </div>

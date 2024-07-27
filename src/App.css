@@ -72,7 +72,17 @@ body {
   line-height: 1.2;
   font-family: "WfSemibold", sans-serif;
 }
-
+.heading-project,
+.sub-heading-project,
+.read-heading-project {
+  font-family: "WfSemibold", sans-serif;
+}
+.sub-heading-project {
+  color: #6b6b6b;
+}
+.Project-img-cont {
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
 .WhoIsYohan-container {
   display: flex;
   justify-content: center;

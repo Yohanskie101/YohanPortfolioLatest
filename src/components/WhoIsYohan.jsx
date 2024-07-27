@@ -64,13 +64,11 @@ const WhoIsYohan = () => {
             transition: "all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s",
           }}
         >
-          My full name is{" "}
-          <span className="font-semibold">Mark Johanne Campos</span> and I'm
-          from the Philippines. I graduated in 2024 with a Bachelor of Science
-          in Information Technology, earning the Latin honor of Cum Laude.
-          Currently, I am furthering my studies and continuously improving my
-          skills. In my free time, I enjoy playing online games, which is one of
-          my hobbies.
+          Hey there, I'm from the Philippines. I graduated in 2024 with a
+          Bachelor of Science in Information Technology, earning the Latin honor
+          of Cum Laude. Currently, I am furthering my studies and continuously
+          improving my skills. In my free time, I enjoy playing online games,
+          which is one of my hobbies.
           <br></br>
           <br></br> I am a friendly person who loves interacting with others and
           am naturally curious, always eager to search for information and ask

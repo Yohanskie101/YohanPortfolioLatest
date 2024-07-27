@@ -22,7 +22,7 @@ const LogoText = () => {
   return (
     <Link
       to="/"
-      className="logo-container fixed top-5 left-5 2xl:left-14 xl:left-14 lg:left-14 md:left-14 2xl:top-10 xl:top-10 lg:top-10 md:top-10 cursor-pointer"
+      className="logo-container fixed top-5 left-5 2xl:left-14 xl:left-14 lg:left-14 md:left-14 2xl:top-10 xl:top-10 lg:top-10 md:top-10 cursor-pointer z-10"
     >
       <p
         className={`name-logo blacky ${
