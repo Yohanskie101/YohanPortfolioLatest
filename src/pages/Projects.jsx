@@ -1,5 +1,7 @@
 import React from "react";
 import Projectfirst from "../components/Projectfirst";
+import Projectsecond from "../components/Projectsecond";
+import Projectthird from "../components/Projectthird";
 
 const Projects = () => {
   return (
@@ -10,8 +12,17 @@ const Projects = () => {
       <div className="font-for-intro mb-5 2xl:mb-16 lg:mb-13 md:mb-12 sm:mb-10 ">
         Projects
       </div>
-      <div className="relative">
+
+      <div className="relative mb-7 sm:mb-16 md:mb-20 lg:mb-28">
         <Projectfirst />
+      </div>
+
+      <div className="relative mb-7 sm:mb-16 md:mb-20 lg:mb-28">
+        <Projectsecond />
+      </div>
+
+      <div className="relative mb-7 sm:mb-16 md:mb-20 lg:mb-28">
+        <Projectthird />
       </div>
     </div>
   );

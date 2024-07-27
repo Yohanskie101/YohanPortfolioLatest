@@ -1,16 +1,16 @@
 import React from "react";
-import FirstProjectImg from "../assets/pj4-img.png";
+import ThirdProjectImg from "../assets/pj1-img.png";
 
-function Projectfirst() {
+function Projectthird() {
   return (
     <>
       <div className="heading-project text-base xl:text-4xl lg:text-3xl sm:text-2xl leading-relaxed">
-        ITrak
+        Pic-A-Book
       </div>
 
       <div className="flex justify-between mb-5">
         <div className="sub-heading-project text-xs sm:text-lg md:text-xl 2xl:text-2xl lg:text-2xl  ">
-          Tracking Management System
+          Library Management System
         </div>
         <div className="read-heading-project text-xs sm:text-lg md:text-xl 2xl:text-2xl ">
           Read the full details
@@ -18,7 +18,7 @@ function Projectfirst() {
       </div>
 
       <div className="Project-img-cont w-full mb-5 h-1/2">
-        <img className="w-full h-full" src={FirstProjectImg} />
+        <img className="w-full h-full" src={ThirdProjectImg} />
       </div>
 
       <div className="relative">
@@ -36,7 +36,7 @@ function Projectfirst() {
             Lead Programmer
           </div>
           <div className="read-heading-project text-xs sm:text-lg md:text-xl 2xl:text-2xl ">
-            2023-2024
+            2022-2022
           </div>
         </div>
       </div>
@@ -44,4 +44,4 @@ function Projectfirst() {
   );
 }
 
-export default Projectfirst;
+export default Projectthird;
