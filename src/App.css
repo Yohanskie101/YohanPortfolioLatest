@@ -84,6 +84,15 @@ body {
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
   border-radius: 40px;
   overflow: hidden;
+  transition: 1s ease;
+}
+.Project-img-cont img {
+  border-radius: 40px;
+  transition: 0.8s ease;
+}
+
+.Project-img-cont img:hover {
+  transform: scale(0.97);
 }
 .WhoIsYohan-container {
   display: flex;

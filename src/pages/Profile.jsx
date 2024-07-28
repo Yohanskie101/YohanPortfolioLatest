@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
 import LogoText from "../components/LogoText";
+import ThemeControl from "../components/ThemeControl";
 import Introduction from "../components/Introduction";
 import WhoIsYohan from "../components/WhoIsYohan";
 import Myfooter from "../components/MyFooter";
@@ -19,6 +20,7 @@ function Profile() {
     <div className="profile-body min-h-screen">
       <div className="container">
         <LogoText />
+        <ThemeControl />
         <Introduction />
         <WhoIsYohan />
         <Projects />

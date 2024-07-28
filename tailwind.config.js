@@ -4,5 +4,9 @@ export default {
   theme: {
     extend: {},
   },
-  plugins: [],
+  plugins: [require("daisyui")],
+  daisyui: {
+    themes: ["light", "dark", "cupcake"], // Apply DaisyUI themes
+    darkTheme: false, // Disable automatic dark mode
+  },
 };
