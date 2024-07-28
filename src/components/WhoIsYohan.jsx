@@ -26,7 +26,7 @@ const WhoIsYohan = () => {
   }, [isInViewText]);
 
   return (
-    <div className="WhoIsYohan-container w-full h-fit gap-7 mt-40 2xl:mt-56 xl:mt-56 lg:mt-44 md:mt-40 sm:mt-40">
+    <div className="WhoIsYohan-container w-full h-fit gap-7 mt-40 2xl:mt-56 xl:mt-56 lg:mt-44 md:mt-40 sm:mt-40 relative">
       <div className="image-grad-pic-container">
         <img
           ref={imageRef}

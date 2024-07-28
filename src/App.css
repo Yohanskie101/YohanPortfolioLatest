@@ -266,6 +266,27 @@ body {
 }
 
 @media (max-width: 475px) {
+  .Full-description-container {
+    width: 100%;
+    position: relative;
+  }
+  .WhoIsYohan-container {
+    position: relative !important;
+    display: block !important;
+    text-align: center;
+  }
+  .image-grad-pic-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 300px;
+    margin-bottom: 5%;
+  }
+  .image-grad-pic {
+    display: block !important;
+    margin: 0 auto;
+  }
   .container {
     max-width: 475px !important;
   }
@@ -291,7 +312,6 @@ body {
   .third-footer-div {
     font-size: 16px !important;
   }
-
   .fourth-footer-div {
     margin-top: 10px !important;
     font-size: 12px !important;
