@@ -82,6 +82,8 @@ body {
 }
 .Project-img-cont {
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  border-radius: 40px;
+  overflow: hidden;
 }
 .WhoIsYohan-container {
   display: flex;
@@ -118,6 +120,8 @@ body {
 .image-grad-pic-container {
   height: 432px;
   width: 288px;
+  border-radius: 10px;
+  overflow: hidden;
 }
 
 .image-grad-pic {
