@@ -6,7 +6,7 @@ export default {
   },
   plugins: [require("daisyui")],
   daisyui: {
-    themes: ["light", "dark", "cupcake"], // Apply DaisyUI themes
+    themes: ["light", "dark", "cupcake", "black", "luxury"], // Apply DaisyUI themes
     darkTheme: false, // Disable automatic dark mode
   },
 };

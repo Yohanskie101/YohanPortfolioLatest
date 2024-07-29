@@ -6,6 +6,7 @@ import Introduction from "../components/Introduction";
 import WhoIsYohan from "../components/WhoIsYohan";
 import Myfooter from "../components/MyFooter";
 import Projects from "./Projects";
+import ContactMe from "../components/ContactMe";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import transition from "../transition";
@@ -24,6 +25,7 @@ function Profile() {
         <Introduction />
         <WhoIsYohan />
         <Projects />
+        <ContactMe />
         <Myfooter />
       </div>
     </div>

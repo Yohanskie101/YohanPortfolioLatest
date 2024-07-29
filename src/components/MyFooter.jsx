@@ -25,11 +25,14 @@ const MyFooterButtons = () => {
 
 const MyFooterButtonsConnect = () => {
   const FooterButtonsConnect = [
-    { name: "Facebook", path: "/profile" },
-    { name: "Instagram", path: "/projects" },
-    { name: "Twitter", path: "/resume" },
-    { name: "Github", path: "/skills" },
-    { name: "LinkedIn", path: "/contact" },
+    { name: "Facebook", path: "https://www.facebook.com/johanne.campos" },
+    { name: "Instagram", path: "https://www.instagram.com/yohan.nnnnnnn/" },
+    { name: "Twitter", path: "https://x.com/mark_johanne" },
+    { name: "Github", path: "https://github.com/Yohanskie101" },
+    {
+      name: "LinkedIn",
+      path: "https://www.linkedin.com/in/campos-mark-johanne-v-78055831b/",
+    },
   ];
   return FooterButtonsConnect.map((selected, index) => {
     return (

@@ -185,7 +185,22 @@ body {
   transform: translateY(115px);
   transition: transform 0.5s;
 }
+.container-below {
+  display: flex;
+  align-items: center;
+  gap: 2%;
+}
 
+.Container-cont {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-items: center;
+}
+.box-one-cont,
+.box-two-cont {
+  max-width: fit-content;
+  margin: 0;
+}
 /* transition */
 .slide-in {
   position: fixed;
@@ -330,5 +345,8 @@ body {
   .fourth-footer-div {
     margin-top: 10px !important;
     font-size: 12px !important;
+  }
+  .Container-cont {
+    display: block;
   }
 }
