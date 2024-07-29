@@ -13,8 +13,8 @@ const App = () => {
     <>
       <AnimatePresence mode="wait">
         <Routes location={location} key={location.pathname}>
-          <Route index element={<Home />} />
-          <Route path="/profile" element={<Profile />} />
+          <Route index element={<Profile />} />
+          {/* <Route path="/profile" element={<Profile />} /> */}
         </Routes>
       </AnimatePresence>
     </>
