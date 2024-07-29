@@ -21,7 +21,7 @@ function Projectthird() {
         <img
           className="w-full h-full"
           src={ThirdProjectImg}
-          onClick={() => document.getElementById("my_modal_1").showModal()}
+          onClick={() => document.getElementById("my_modal_3").showModal()}
         />
       </div>
 
@@ -45,7 +45,7 @@ function Projectthird() {
         </div>
       </div>
 
-      <dialog id="my_modal_1" className="modal">
+      <dialog id="my_modal_3" className="modal">
         <div className="modal-box">
           <h3 className="font-bold text-lg">Hello!</h3>
           <p className="py-4">Pic-A-Book</p>

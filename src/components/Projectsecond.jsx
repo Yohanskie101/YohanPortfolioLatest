@@ -21,7 +21,7 @@ function Projectsecond() {
         <img
           className="w-full h-full"
           src={SecondProjectImg}
-          onClick={() => document.getElementById("my_modal_1").showModal()}
+          onClick={() => document.getElementById("my_modal_2").showModal()}
         />
       </div>
 
@@ -45,7 +45,7 @@ function Projectsecond() {
         </div>
       </div>
 
-      <dialog id="my_modal_1" className="modal">
+      <dialog id="my_modal_2" className="modal">
         <div className="modal-box">
           <h3 className="font-bold text-lg">Hello!</h3>
           <p className="py-4">Javah Catering Service</p>
