@@ -8,7 +8,7 @@ function ContactMe() {
         Contact Me
       </div>
 
-      <div className="Container-cont ">
+      <div className="Container-cont text-sm 2xl:text-xl xl:text-xl lg:text-lg sm:text-sm">
         <div className="box-one-cont w-max mb-10 xl:mb-0 ">
           <div className="mb-3 xl:mb-2">Get in Touch</div>
           <div className="mb-3 xl:mb-2">
@@ -22,13 +22,13 @@ function ContactMe() {
           </div>
         </div>
 
-        <div className="box-two-cont h-max w-max m-0">
+        <div className="box-two-cont h-max w-max m-0 ">
           <div>
             Full name
             <input
               type="text"
               placeholder="Full Name"
-              className="input  input-bordered w-full max-w-xs mt-2"
+              className="input  input-bordered w-full max-w-xs mt-2 text-sm 2xl:text-lg xl:text-lg lg:text-lg sm:text-sm"
             />
           </div>
           <div className="mt-5">
@@ -36,13 +36,13 @@ function ContactMe() {
             <input
               type="text"
               placeholder="Your Email"
-              className="input input-bordered w-full max-w-xs mt-2"
+              className="input input-bordered w-full max-w-xs mt-2 text-sm 2xl:text-lg xl:text-lg lg:text-lg sm:text-sm"
             />
           </div>
           <div className="mt-5">
             Message
             <textarea
-              className="textarea textarea-bordered textarea-lg w-full max-w-xs mt-2"
+              className="textarea textarea-bordered textarea-lg w-full max-w-xs mt-2 text-sm 2xl:text-lg xl:text-lg lg:text-lg sm:text-sm"
               placeholder="Bio"
             ></textarea>
           </div>
