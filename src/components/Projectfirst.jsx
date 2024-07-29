@@ -96,6 +96,14 @@ function Projectfirst() {
             Ensures the system is accessible on mobile devices for on-the-go
             functionality.
           </p>
+          <div className="container-btn-footer py-4">
+            <button className="btn-modal-footer btn btn-outline">
+              Live Preview
+            </button>
+            <button className="btn-modal-footer  btn btn-outline">
+              Source Files
+            </button>
+          </div>
           <div className="modal-action">
             <form method="dialog">
               {/* if there is a button in form, it will close the modal */}

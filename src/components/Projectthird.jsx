@@ -49,7 +49,7 @@ function Projectthird() {
 
       <dialog id="my_modal_3" className="modal">
         <div className="modal-box">
-          <h3 className="font-bold text-2xl ">ITrak</h3>
+          <h3 className="font-bold text-2xl ">Pic-A-Book</h3>
           <div className="img-cont-modal py-4 ">
             <img className="img-modal w-full h-full" src={ThirdProjectImg} />
           </div>
@@ -80,6 +80,14 @@ function Projectthird() {
             System: Authenticate users with roles as administrators (librarians)
             and borrowers.
           </p>
+          <div className="container-btn-footer py-4">
+            <button className="btn-modal-footer btn btn-outline">
+              Live Preview
+            </button>
+            <button className="btn-modal-footer  btn btn-outline">
+              Source Files
+            </button>
+          </div>
           <div className="modal-action">
             <form method="dialog">
               {/* if there is a button in form, it will close the modal */}
