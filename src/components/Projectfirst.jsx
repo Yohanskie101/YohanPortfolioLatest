@@ -54,7 +54,12 @@ function Projectfirst() {
 
       <dialog id="my_modal_1" className="modal">
         <div className="modal-box">
-          <h3 className="font-bold text-2xl ">ITrak</h3>
+          <form method="dialog">
+            <h3 className="font-bold text-2xl ">ITrak</h3>
+            <button className="btn btn-sm btn-circle btn-ghost absolute right-2 top-2">
+              ✕
+            </button>
+          </form>
           <div className="img-cont-modal py-4 ">
             <img className="img-modal w-full h-full" src={FirstProjectImg} />
           </div>
@@ -104,12 +109,7 @@ function Projectfirst() {
               Source Files
             </button>
           </div>
-          <div className="modal-action">
-            <form method="dialog">
-              {/* if there is a button in form, it will close the modal */}
-              <button className="btn">Close</button>
-            </form>
-          </div>
+          {/* <div className="modal-action"></div> */}
         </div>
       </dialog>
     </>

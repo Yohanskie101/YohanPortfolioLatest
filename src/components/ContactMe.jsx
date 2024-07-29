@@ -27,8 +27,9 @@ function ContactMe() {
             Full name
             <input
               type="text"
-              placeholder="Full Name"
+              placeholder="Your Full Name"
               className="input  input-bordered w-full max-w-xs mt-2 text-sm 2xl:text-lg xl:text-lg lg:text-lg sm:text-sm"
+              disabled
             />
           </div>
           <div className="mt-5">
@@ -37,15 +38,21 @@ function ContactMe() {
               type="text"
               placeholder="Your Email"
               className="input input-bordered w-full max-w-xs mt-2 text-sm 2xl:text-lg xl:text-lg lg:text-lg sm:text-sm"
+              disabled
             />
           </div>
           <div className="mt-5">
             Message
             <textarea
               className="textarea textarea-bordered textarea-lg w-full max-w-xs mt-2 text-sm 2xl:text-lg xl:text-lg lg:text-lg sm:text-sm"
-              placeholder="Bio"
+              placeholder="Your Message "
+              disabled
             ></textarea>
           </div>
+
+          <button className="btn btn-outline btn-error mt-5 w-full max-w-xs">
+            Submit
+          </button>
         </div>
       </div>
     </div>

@@ -51,7 +51,12 @@ function Projectsecond() {
 
       <dialog id="my_modal_2" className="modal">
         <div className="modal-box">
-          <h3 className="font-bold text-2xl ">Javah Catering Service</h3>
+          <form method="dialog">
+            <h3 className="font-bold text-2xl ">Javah Catering Service</h3>
+            <button className="btn btn-sm btn-circle btn-ghost absolute right-2 top-2">
+              ✕
+            </button>
+          </form>
           <div className="img-cont-modal py-4 ">
             <img className="img-modal w-full h-full" src={SecondProjectImg} />
           </div>
@@ -92,12 +97,7 @@ function Projectsecond() {
               Source Files
             </button>
           </div>
-          <div className="modal-action">
-            <form method="dialog">
-              {/* if there is a button in form, it will close the modal */}
-              <button className="btn">Close</button>
-            </form>
-          </div>
+          <div className="modal-action"></div>
         </div>
       </dialog>
     </>
