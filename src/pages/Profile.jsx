@@ -1,5 +1,4 @@
 import React, { useEffect } from "react";
-import { Link } from "react-router-dom";
 import LogoText from "../components/LogoText";
 import ThemeControl from "../components/ThemeControl";
 import Introduction from "../components/Introduction";
@@ -8,9 +7,10 @@ import Myfooter from "../components/MyFooter";
 import Projects from "./Projects";
 import ContactMe from "../components/ContactMe";
 import { gsap } from "gsap";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { ScrollTrigger, ScrollToPlugin } from "gsap/all";
 import transition from "../transition";
-gsap.registerPlugin(ScrollTrigger);
+
+gsap.registerPlugin(ScrollTrigger, ScrollToPlugin);
 
 function Profile() {
   useEffect(() => {
@@ -22,10 +22,18 @@ function Profile() {
       <div className="container">
         <LogoText />
         <ThemeControl />
-        <Introduction />
-        <WhoIsYohan />
-        <Projects />
-        <ContactMe />
+        <div id="Introduction">
+          <Introduction />
+        </div>
+        <div id="Profile">
+          <WhoIsYohan />
+        </div>
+        <div id="Projects">
+          <Projects />
+        </div>
+        <div id="ContactMe">
+          <ContactMe />
+        </div>
         <Myfooter />
       </div>
     </div>
