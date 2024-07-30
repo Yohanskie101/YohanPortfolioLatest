@@ -93,7 +93,15 @@ function Projectsecond() {
             <button className="btn-modal-footer btn btn-outline">
               Live Preview
             </button>
-            <button className="btn-modal-footer  btn btn-outline">
+            <button
+              className="btn-modal-footer  btn btn-outline"
+              onClick={() =>
+                window.open(
+                  "https://drive.google.com/file/d/18rOedIWKVI3q9r5XR_hGz-QQ2zrLsdCJ/view?usp=sharing",
+                  "_blank"
+                )
+              }
+            >
               Source Files
             </button>
           </div>

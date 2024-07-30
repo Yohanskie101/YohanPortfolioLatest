@@ -105,7 +105,12 @@ function Projectfirst() {
             <button className="btn-modal-footer btn btn-outline">
               Live Preview
             </button>
-            <button className="btn-modal-footer  btn btn-outline">
+            <button
+              className="btn-modal-footer  btn btn-outline"
+              onClick={() =>
+                window.open("https://github.com/Yohanskie101/iTrak", "_blank")
+              }
+            >
               Source Files
             </button>
           </div>
