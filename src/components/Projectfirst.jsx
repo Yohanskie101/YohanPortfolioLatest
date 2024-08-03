@@ -32,25 +32,19 @@ function Projectfirst() {
         />
       </div>
 
-      <div className="relative">
-        <div className="flex justify-around ">
-          <div className="sub-heading-project text-xs sm:text-lg md:text-xl 2xl:text-2xl ">
-            Role
-          </div>
-          <div className="sub-heading-project text-xs sm:text-lg md:text-xl 2xl:text-2xl ">
-            Years
-          </div>
+      {/* new div */}
+      <div className="grid grid-cols-2 justify-items-center">
+        <div className="text-xs sm:text-lg md:text-xl 2xl:text-2xl">
+          <p className="sub-heading-project">Role</p>
+          <p className="read-heading-project">Lead Programmer</p>
         </div>
 
-        <div className="flex justify-around">
-          <div className="read-heading-project text-xs sm:text-lg md:text-xl 2xl:text-2xl ">
-            Lead Programmer
-          </div>
-          <div className="read-heading-project text-xs sm:text-lg md:text-xl 2xl:text-2xl ">
-            2023-2024
-          </div>
+        <div className="text-xs sm:text-lg md:text-xl 2xl:text-2xl">
+          <p className="sub-heading-project">Years</p>
+          <p className="read-heading-project  ">2023-2024</p>
         </div>
       </div>
+      {/* end of new div */}
 
       <dialog id="my_modal_1" className="modal">
         <div className="modal-box">
