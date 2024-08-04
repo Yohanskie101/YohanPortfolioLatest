@@ -64,11 +64,12 @@ const WhoIsYohan = () => {
             transition: "all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s",
           }}
         >
-          Hey there, I'm from the Philippines. I graduated in 2024 with a
-          Bachelor of Science in Information Technology, earning the Latin honor
-          of Cum Laude. Currently, I am furthering my studies and continuously
-          improving my skills. In my free time, I enjoy playing online games,
-          which is one of my hobbies.
+          I graduated in 2024 with a Bachelor of Science in Information
+          Technology, earning Cum Laude honors from Quezon City University. As a
+          fresh graduate, I'm excited to start my career in web development.
+          While I don't have formal work experience yet, my academic background
+          has given me a strong foundation in the field. In my free time, I
+          enjoy playing online games, which is one of my hobbies.
           <br></br>
           <br></br> I am a friendly person who loves interacting with others and
           am naturally curious, always eager to search for information and ask
