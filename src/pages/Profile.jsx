@@ -7,6 +7,7 @@ import Myfooter from "../components/MyFooter";
 import Projects from "./Projects";
 import ContactMe from "../components/ContactMe";
 import Skills from "../components/Skills";
+import Skills2 from "../components/Skills2";
 import { gsap } from "gsap";
 import { ScrollTrigger, ScrollToPlugin } from "gsap/all";
 import transition from "../transition";
@@ -31,6 +32,7 @@ function Profile() {
         </div>
         <div id="Skills">
           <Skills />
+          <Skills2 />
         </div>
         <div id="Projects">
           <Projects />
