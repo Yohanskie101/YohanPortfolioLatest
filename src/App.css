@@ -72,6 +72,12 @@ body {
   line-height: 1.2;
   font-family: "WfSemibold", sans-serif;
 }
+
+.font-for-intro-2 {
+  font-size: 3.2rem;
+  line-height: 1.2;
+  font-family: "WfSemibold", sans-serif;
+}
 .heading-project,
 .sub-heading-project,
 .read-heading-project {
@@ -256,6 +262,11 @@ body {
     font-size: 4rem;
     line-height: 1.2;
   }
+
+  .font-for-intro-2 {
+    font-size: 3rem;
+    line-height: 1.2;
+  }
   .WhoIsYohan-container {
     justify-content: flex-start;
     align-items: flex-start;
@@ -276,6 +287,11 @@ body {
     font-size: 3.5rem;
     line-height: 1.2;
   }
+
+  .font-for-intro-2 {
+    font-size: 2.5rem;
+    line-height: 1.2;
+  }
 }
 
 @media (max-width: 640px) {
@@ -287,6 +303,12 @@ body {
     font-size: 2.5rem;
     line-height: 1.2;
   }
+
+  .font-for-intro-2 {
+    font-size: 1.5rem;
+    line-height: 1.2;
+  }
+
   .MyFooter-first-container {
     gap: 1rem !important;
   }
@@ -332,6 +354,11 @@ body {
   }
   .font-for-intro {
     font-size: 2.5rem;
+    line-height: 1.2;
+  }
+
+  .font-for-intro-2 {
+    font-size: 1.5rem;
     line-height: 1.2;
   }
   .image-grad-pic {

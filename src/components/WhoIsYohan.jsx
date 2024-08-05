@@ -4,14 +4,21 @@ import { gsap } from "gsap";
 import React, { useRef, useEffect } from "react";
 
 const WhoIsYohan = () => {
+  //Framer image
   const imageRef = useRef(null);
+  //Framer description
   const descriptRef = useRef(null);
+  //Gsap Who is Yohan
   const textRef = useRef(null);
 
+  //Framer image
   const isInViewImage = useInView(imageRef, { once: true });
+  //Framer description
   const isInViewDescript = useInView(descriptRef, { once: true });
+  //Gsap Who is Yohan
   const isInViewText = useInView(textRef, { once: true });
 
+  //Gsap Who is Yohan
   useEffect(() => {
     if (isInViewText) {
       new SplitType("#my-text", { types: "chars" });
