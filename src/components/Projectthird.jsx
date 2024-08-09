@@ -1,28 +1,86 @@
-import React from "react";
+import React, { useRef, useEffect } from "react";
+import { useInView } from "framer-motion";
+import { gsap } from "gsap";
 import ThirdProjectImg from "../assets/pj1-img.png";
 import lng1 from "../assets/vbnet.png";
 import lng7 from "../assets/microsoftaccess.png";
 
 function Projectthird() {
+  //Framer project
+  const projectRef = useRef(null);
+
+  //Framer project
+  const isInViewProject = useInView(projectRef, { once: true });
+
+  //Gsap Title Project
+  const titleRef3 = useRef(null);
+
+  //Gsap Title Prrroject check if it is in view
+  const isInViewTitle3 = useInView(titleRef3, { once: true });
+
+  //Gsap Who is Yohan
+  useEffect(() => {
+    if (isInViewTitle3) {
+      new SplitType("#my-title3", { types: "chars" });
+
+      gsap.to(".char", {
+        y: 0,
+        stagger: 0.02,
+        delay: 0.0,
+        duration: 0.01,
+      });
+    }
+  }, [isInViewTitle3]);
   return (
     <>
-      <div className="heading-project text-base xl:text-4xl lg:text-3xl sm:text-2xl leading-relaxed">
+      <div
+        className="Title-Project heading-project text-base xl:text-4xl lg:text-3xl sm:text-2xl leading-relaxed"
+        id="my-title3"
+        ref={titleRef3}
+        style={{
+          transform: isInViewTitle3 ? "none" : "translateY(0px)",
+          opacity: isInViewTitle3 ? 1 : 0,
+          transition: "all 0.01s ease 0.0s",
+        }}
+      >
         Pic-A-Book
       </div>
 
       <div className="flex justify-between mb-5">
-        <div className="sub-heading-project text-xs sm:text-lg md:text-xl 2xl:text-2xl lg:text-2xl  ">
+        <div
+          className="sub-heading-project text-xs sm:text-lg md:text-xl 2xl:text-2xl lg:text-2xl"
+          ref={projectRef}
+          style={{
+            transform: isInViewProject ? "none" : "translateY(0px)",
+            opacity: isInViewProject ? 1 : 0,
+            transition: "all 0.3s cubic-bezier(0.17, 0.55, 0.55, 1) 0.8s",
+          }}
+        >
           Library Management System
         </div>
         <div
           className="read-heading-project text-xs sm:text-lg md:text-xl 2xl:text-2xl cursor-pointer"
           onClick={() => document.getElementById("my_modal_3").showModal()}
+          ref={projectRef}
+          style={{
+            transform: isInViewProject ? "none" : "translateY(0px)",
+            opacity: isInViewProject ? 1 : 0,
+            transition: "all 0.3s cubic-bezier(0.17, 0.55, 0.55, 1) 0.8s",
+          }}
         >
           Read the full details
         </div>
       </div>
 
-      <div className="Project-img-cont w-full mb-5 h-1/2">
+      <div
+        className="Project-img-cont w-full mb-5 h-1/2"
+        ref={projectRef}
+        style={{
+          transform: isInViewProject ? "none" : "translateY(70px)",
+          opacity: isInViewProject ? 1 : 0,
+          transition: "all 0.3s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s",
+        }}
+      >
         <img
           className="w-full h-full"
           src={ThirdProjectImg}

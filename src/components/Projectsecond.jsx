@@ -1,4 +1,6 @@
-import React from "react";
+import React, { useRef, useEffect } from "react";
+import { gsap } from "gsap";
+import { useInView } from "framer-motion";
 import SecondProjectImg from "../assets/pj3-img.png";
 import lng1 from "../assets/dotnet-logo.png";
 import lng2 from "../assets/c-sharp.png";
@@ -6,25 +8,81 @@ import lng4 from "../assets/js.png";
 import lng7 from "../assets/bootstrap.png";
 
 function Projectsecond() {
+  //Framer project
+  const projectRef = useRef(null);
+
+  //Framer project
+  const isInViewProject = useInView(projectRef, { once: true });
+
+  //Gsap Title Project
+  const titleRef2 = useRef(null);
+
+  //Gsap Title Prrroject check if it is in view
+  const isInViewTitle2 = useInView(titleRef2, { once: true });
+
+  //Gsap Who is Yohan
+  useEffect(() => {
+    if (isInViewTitle2) {
+      new SplitType("#my-title2", { types: "chars" });
+
+      gsap.to(".char", {
+        y: 0,
+        stagger: 0.02,
+        delay: 0.0,
+        duration: 0.01,
+      });
+    }
+  }, [isInViewTitle2]);
   return (
     <>
-      <div className="heading-project text-base xl:text-4xl lg:text-3xl sm:text-2xl leading-relaxed">
+      <div
+        className="Title-Project heading-project text-base xl:text-4xl lg:text-3xl sm:text-2xl leading-relaxed"
+        id="my-title2"
+        ref={titleRef2}
+        style={{
+          transform: isInViewTitle2 ? "none" : "translateY(0px)",
+          opacity: isInViewTitle2 ? 1 : 0,
+          transition: "all 0.01s ease 0.0s",
+        }}
+      >
         Javah Catering Service
       </div>
 
       <div className="flex justify-between mb-5">
-        <div className="sub-heading-project text-xs sm:text-lg md:text-xl 2xl:text-2xl lg:text-2xl  ">
+        <div
+          className="sub-heading-project text-xs sm:text-lg md:text-xl 2xl:text-2xl lg:text-2xl "
+          ref={projectRef}
+          style={{
+            transform: isInViewProject ? "none" : "translateY(0px)",
+            opacity: isInViewProject ? 1 : 0,
+            transition: "all 0.3s cubic-bezier(0.17, 0.55, 0.55, 1) 0.8s",
+          }}
+        >
           Events and Reservation System
         </div>
         <div
           className="read-heading-project text-xs sm:text-lg md:text-xl 2xl:text-2xl cursor-pointer"
           onClick={() => document.getElementById("my_modal_2").showModal()}
+          ref={projectRef}
+          style={{
+            transform: isInViewProject ? "none" : "translateY(0px)",
+            opacity: isInViewProject ? 1 : 0,
+            transition: "all 0.3s cubic-bezier(0.17, 0.55, 0.55, 1) 0.8s",
+          }}
         >
           Read the full details
         </div>
       </div>
 
-      <div className="Project-img-cont w-full mb-5 h-1/2">
+      <div
+        className="Project-img-cont w-full mb-5 h-1/2"
+        ref={projectRef}
+        style={{
+          transform: isInViewProject ? "none" : "translateY(70px)",
+          opacity: isInViewProject ? 1 : 0,
+          transition: "all 0.3s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s",
+        }}
+      >
         <img
           className="w-full h-full"
           src={SecondProjectImg}
