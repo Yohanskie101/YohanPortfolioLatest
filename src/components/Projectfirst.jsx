@@ -9,6 +9,7 @@ import lng4 from "../assets/js.png";
 import lng5 from "../assets/blender.png";
 import lng6 from "../assets/threejs.png";
 import lng7 from "../assets/bootstrap.png";
+import ItrakImg from "../assets/itrak_1.png";
 
 function Projectfirst() {
   //Framer project
@@ -89,7 +90,7 @@ function Projectfirst() {
       >
         <img
           className="w-full h-full"
-          src={FirstProjectImg}
+          src={ItrakImg}
           onClick={() => document.getElementById("my_modal_1").showModal()}
         />
       </div>
