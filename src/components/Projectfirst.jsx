@@ -10,6 +10,11 @@ import lng5 from "../assets/blender.png";
 import lng6 from "../assets/threejs.png";
 import lng7 from "../assets/bootstrap.png";
 import ItrakImg from "../assets/itrak_1.png";
+import ItrakImg2 from "../assets/itrak2.png";
+import ItrakImg3 from "../assets/itrak3.png";
+import ItrakImg4 from "../assets/itrak4.png";
+import Carousel from "react-multi-carousel";
+import "react-multi-carousel/lib/styles.css";
 
 function Projectfirst() {
   //Framer project
@@ -37,6 +42,26 @@ function Projectfirst() {
       });
     }
   }, [isInViewTitle1]);
+
+  const responsive = {
+    superLargeDesktop: {
+      // the naming can be any, depends on you.
+      breakpoint: { max: 4000, min: 3000 },
+      items: 1,
+    },
+    desktop: {
+      breakpoint: { max: 3000, min: 1024 },
+      items: 1,
+    },
+    tablet: {
+      breakpoint: { max: 1024, min: 464 },
+      items: 1,
+    },
+    mobile: {
+      breakpoint: { max: 464, min: 0 },
+      items: 1,
+    },
+  };
 
   return (
     <>
@@ -117,9 +142,40 @@ function Projectfirst() {
               ✕
             </button>
           </form>
-          <div className="img-cont-modal py-4 ">
-            <img className="img-modal w-full h-full" src={FirstProjectImg} />
-          </div>
+          <Carousel
+            swipeable={false}
+            draggable={false}
+            responsive={responsive}
+            ssr={true} // means to render carousel on server-side.
+            infinite={true}
+            autoPlay={true}
+            autoPlaySpeed={10000}
+            keyBoardControl={true}
+            customTransition="all 3s"
+            transitionDuration={7000}
+            containerClass="carousel-container"
+            removeArrowOnDeviceType={[
+              "tablet",
+              "mobile",
+              "superLargeDesktop",
+              "desktop",
+            ]}
+            className="py-4"
+            focusOnSelect={true}
+          >
+            <div className="img-cont-modal ">
+              <img className="img-modal w-full h-full" src={FirstProjectImg} />
+            </div>
+            <div className="img-cont-modal">
+              <img className="img-modal w-full h-full" src={ItrakImg2} />
+            </div>
+            <div className="img-cont-modal">
+              <img className="img-modal w-full h-full" src={ItrakImg3} />
+            </div>
+            <div className="img-cont-modal">
+              <img className="img-modal w-full h-full" src={ItrakImg4} />
+            </div>
+          </Carousel>
 
           <p className="py-4">
             iTrak is a comprehensive system designed to streamline asset
