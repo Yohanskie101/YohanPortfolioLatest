@@ -145,14 +145,16 @@ function Projectfirst() {
           <Carousel
             swipeable={false}
             draggable={false}
+            showDots={true}
             responsive={responsive}
             ssr={true} // means to render carousel on server-side.
             infinite={true}
             autoPlay={true}
-            autoPlaySpeed={10000}
+            autoPlaySpeed={5000}
             keyBoardControl={true}
             customTransition="all 3s"
-            transitionDuration={7000}
+            transitionDuration={1000}
+            dotListClass="custom-dot-list-style"
             containerClass="carousel-container"
             removeArrowOnDeviceType={[
               "tablet",
@@ -163,16 +165,16 @@ function Projectfirst() {
             className="py-4"
             focusOnSelect={true}
           >
-            <div className="img-cont-modal ">
+            <div className="img-cont-modal pb-4">
               <img className="img-modal w-full h-full" src={FirstProjectImg} />
             </div>
-            <div className="img-cont-modal">
+            <div className="img-cont-modal pb-4">
               <img className="img-modal w-full h-full" src={ItrakImg2} />
             </div>
-            <div className="img-cont-modal">
+            <div className="img-cont-modal pb-4">
               <img className="img-modal w-full h-full" src={ItrakImg3} />
             </div>
-            <div className="img-cont-modal">
+            <div className="img-cont-modal pb-4">
               <img className="img-modal w-full h-full" src={ItrakImg4} />
             </div>
           </Carousel>

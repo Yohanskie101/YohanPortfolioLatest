@@ -6,6 +6,12 @@ import lng1 from "../assets/dotnet-logo.png";
 import lng2 from "../assets/c-sharp.png";
 import lng4 from "../assets/js.png";
 import lng7 from "../assets/bootstrap.png";
+import javahImg2 from "../assets/javah2.png";
+import javahImg3 from "../assets/javah3.png";
+import javahImg4 from "../assets/javah4.png";
+import javahImg5 from "../assets/javah5.png";
+import Carousel from "react-multi-carousel";
+import "react-multi-carousel/lib/styles.css";
 
 function Projectsecond() {
   //Framer project
@@ -33,6 +39,27 @@ function Projectsecond() {
       });
     }
   }, [isInViewTitle2]);
+
+  const responsive = {
+    superLargeDesktop: {
+      // the naming can be any, depends on you.
+      breakpoint: { max: 4000, min: 3000 },
+      items: 1,
+    },
+    desktop: {
+      breakpoint: { max: 3000, min: 1024 },
+      items: 1,
+    },
+    tablet: {
+      breakpoint: { max: 1024, min: 464 },
+      items: 1,
+    },
+    mobile: {
+      breakpoint: { max: 464, min: 0 },
+      items: 1,
+    },
+  };
+
   return (
     <>
       <div
@@ -112,9 +139,45 @@ function Projectsecond() {
               ✕
             </button>
           </form>
-          <div className="img-cont-modal py-4 ">
-            <img className="img-modal w-full h-full" src={SecondProjectImg} />
-          </div>
+          <Carousel
+            swipeable={false}
+            draggable={false}
+            showDots={true}
+            responsive={responsive}
+            ssr={true} // means to render carousel on server-side.
+            infinite={true}
+            autoPlay={true}
+            autoPlaySpeed={5000}
+            keyBoardControl={true}
+            customTransition="all 3s"
+            transitionDuration={1000}
+            dotListClass="custom-dot-list-style"
+            containerClass="carousel-container"
+            removeArrowOnDeviceType={[
+              "tablet",
+              "mobile",
+              "superLargeDesktop",
+              "desktop",
+            ]}
+            className="pt-4"
+            focusOnSelect={true}
+          >
+            <div className="img-cont-modal ">
+              <img className="img-modal w-full h-full" src={SecondProjectImg} />
+            </div>
+            <div className="img-cont-modal ">
+              <img className="img-modal w-full h-full" src={javahImg2} />
+            </div>
+            <div className="img-cont-modal ">
+              <img className="img-modal w-full h-full" src={javahImg3} />
+            </div>
+            <div className="img-cont-modal ">
+              <img className="img-modal w-full h-full" src={javahImg4} />
+            </div>
+            <div className="img-cont-modal ">
+              <img className="img-modal w-full h-full" src={javahImg5} />
+            </div>
+          </Carousel>
 
           <p className="py-4">
             The Javah Catering Reservation System is designed to streamline the
