@@ -13,6 +13,7 @@ import ItrakImg from "../assets/itrak_1.png";
 import ItrakImg2 from "../assets/itrak2.png";
 import ItrakImg3 from "../assets/itrak3.png";
 import ItrakImg4 from "../assets/itrak4.png";
+import ItrakImg5 from "../assets/itrak5.png";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 
@@ -170,6 +171,9 @@ function Projectfirst() {
             </div>
             <div className="img-cont-modal pb-4">
               <img className="img-modal w-full h-full" src={ItrakImg2} />
+            </div>
+            <div className="img-cont-modal pb-4">
+              <img className="img-modal w-full h-full" src={ItrakImg5} />
             </div>
             <div className="img-cont-modal pb-4">
               <img className="img-modal w-full h-full" src={ItrakImg3} />
