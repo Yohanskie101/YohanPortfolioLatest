@@ -8,10 +8,10 @@ import { Analytics } from "@vercel/analytics/react";
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
     <Router>
-      <Analytics />
       <Routes>
         <Route path="/*" element={<App />} />
       </Routes>
     </Router>
+    <Analytics />
   </React.StrictMode>
 );
