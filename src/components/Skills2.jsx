@@ -115,21 +115,21 @@ const Skills2 = () => {
 
                 <div className="flex items-center flex-col p-4 w-1/3">
                   <img src={jsimg} className="h-10 xl:h-20" alt="JavaScript" />
-                  <p className="text-sm 2xl:text-xl xl:text-xl lg:text-lg sm:text-sm font-semibold">
+                  <p className="text-sm 2xl:text-xl xl:text-xl lg:text-lg sm:text-sm font-semibold opacity-80">
                     JavaScript
                   </p>
                 </div>
                 {/* div2 */}
                 <div className="flex items-center flex-col p-4 w-1/3">
                   <img src={phpimg} className="h-10 xl:h-20" alt="PHP" />
-                  <p className="text-sm 2xl:text-xl xl:text-xl lg:text-lg sm:text-sm font-semibold">
+                  <p className="text-sm 2xl:text-xl xl:text-xl lg:text-lg sm:text-sm font-semibold opacity-80">
                     PHP
                   </p>
                 </div>
                 {/* div3 */}
                 <div className="flex items-center flex-col p-4 w-1/3">
                   <img src={csharpimg} className="h-10 xl:h-20" alt="C#" />
-                  <p className="text-sm 2xl:text-xl xl:text-xl lg:text-lg sm:text-sm font-semibold">
+                  <p className="text-sm 2xl:text-xl xl:text-xl lg:text-lg sm:text-sm font-semibold opacity-80">
                     C#
                   </p>
                 </div>
@@ -159,7 +159,7 @@ const Skills2 = () => {
                 {/* Row 1 */}
                 <div className="flex items-center flex-col p-4 w-1/3">
                   <img src={reactimg} className="h-10 xl:h-20" alt="React" />
-                  <p className="text-sm 2xl:text-xl xl:text-xl lg:text-lg sm:text-sm font-semibold">
+                  <p className="text-sm 2xl:text-xl xl:text-xl lg:text-lg sm:text-sm font-semibold opacity-80">
                     React
                   </p>
                 </div>
@@ -169,7 +169,7 @@ const Skills2 = () => {
                     className="h-10 xl:h-20"
                     alt="SweetAlert2"
                   />
-                  <p className="text-sm 2xl:text-xl xl:text-xl lg:text-lg sm:text-sm font-semibold">
+                  <p className="text-sm 2xl:text-xl xl:text-xl lg:text-lg sm:text-sm font-semibold opacity-80">
                     SweetAlert2
                   </p>
                 </div>
@@ -180,7 +180,7 @@ const Skills2 = () => {
                     className="h-10 xl:h-20"
                     alt="Bootstrap"
                   />
-                  <p className="text-sm 2xl:text-xl xl:text-xl lg:text-lg sm:text-sm font-semibold">
+                  <p className="text-sm 2xl:text-xl xl:text-xl lg:text-lg sm:text-sm font-semibold opacity-80">
                     Bootstrap
                   </p>
                 </div>
@@ -192,13 +192,13 @@ const Skills2 = () => {
                     className="h-10 xl:h-20"
                     alt="Tailwind CSS"
                   />
-                  <p className="text-sm 2xl:text-xl xl:text-xl lg:text-lg sm:text-sm font-semibold">
+                  <p className="text-sm 2xl:text-xl xl:text-xl lg:text-lg sm:text-sm font-semibold opacity-80">
                     Tailwind CSS
                   </p>
                 </div>
                 <div className="flex items-center flex-col p-4 w-1/2">
                   <img src={threeimg} className="h-10 xl:h-20" alt="Three.js" />
-                  <p className="text-sm 2xl:text-xl xl:text-xl lg:text-lg sm:text-sm font-semibold">
+                  <p className="text-sm 2xl:text-xl xl:text-xl lg:text-lg sm:text-sm font-semibold opacity-80">
                     Three.js
                   </p>
                 </div>
@@ -220,7 +220,7 @@ const Skills2 = () => {
               transition: "all 0.5s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s",
             }}
           >
-            <div className="flex justify-center font-for-intro-2 font-semibold ">
+            <div className="flex justify-center font-for-intro-2 font-semibold opacity-80">
               Technologies / Tools
             </div>
             <div className="w-full flex justify-center ">
@@ -228,7 +228,7 @@ const Skills2 = () => {
                 {/* Row 1 */}
                 <div className="flex items-center flex-col p-4 w-1/3">
                   <img src={htmlimg} className="h-10 xl:h-20" alt="React" />
-                  <p className="text-sm 2xl:text-xl xl:text-xl lg:text-lg sm:text-sm font-semibold">
+                  <p className="text-sm 2xl:text-xl xl:text-xl lg:text-lg sm:text-sm font-semibold opacity-80 ">
                     HTML5
                   </p>
                 </div>
@@ -238,7 +238,7 @@ const Skills2 = () => {
                     className="h-10 xl:h-20"
                     alt="Tailwind CSS"
                   />
-                  <p className="text-sm 2xl:text-xl xl:text-xl lg:text-lg sm:text-sm font-semibold">
+                  <p className="text-sm 2xl:text-xl xl:text-xl lg:text-lg sm:text-sm font-semibold opacity-80">
                     CSS3
                   </p>
                 </div>
@@ -248,7 +248,7 @@ const Skills2 = () => {
                     className="h-10 xl:h-20"
                     alt="Bootstrap"
                   />
-                  <p className="text-sm 2xl:text-xl xl:text-xl lg:text-lg sm:text-sm font-semibold">
+                  <p className="text-sm 2xl:text-xl xl:text-xl lg:text-lg sm:text-sm font-semibold opacity-80">
                     Github
                   </p>
                 </div>
@@ -260,7 +260,7 @@ const Skills2 = () => {
                     className="h-10 xl:h-20"
                     alt="SweetAlert2"
                   />
-                  <p className="text-sm 2xl:text-xl xl:text-xl lg:text-lg sm:text-sm font-semibold">
+                  <p className="text-sm 2xl:text-xl xl:text-xl lg:text-lg sm:text-sm font-semibold opacity-80">
                     Figma
                   </p>
                 </div>
@@ -270,7 +270,7 @@ const Skills2 = () => {
                     className="h-10 xl:h-20"
                     alt="Three.js"
                   />
-                  <p className="text-sm 2xl:text-xl xl:text-xl lg:text-lg sm:text-sm font-semibold">
+                  <p className="text-sm 2xl:text-xl xl:text-xl lg:text-lg sm:text-sm font-semibold opacity-80">
                     Blender
                   </p>
                 </div>
@@ -280,7 +280,7 @@ const Skills2 = () => {
                     className="h-10 xl:h-20"
                     alt="Three.js"
                   />
-                  <p className="text-sm 2xl:text-xl xl:text-xl lg:text-lg sm:text-sm font-semibold">
+                  <p className="text-sm 2xl:text-xl xl:text-xl lg:text-lg sm:text-sm font-semibold opacity-80">
                     Trello
                   </p>
                 </div>
