@@ -6,6 +6,7 @@ import { Routes, Route, useLocation } from "react-router-dom";
 import Home from "./pages/Home";
 import Profile from "./pages/Profile";
 import { AnimatePresence } from "framer-motion";
+import { Analytics } from "@vercel/analytics/react";
 
 const App = () => {
   const location = useLocation();
@@ -17,6 +18,7 @@ const App = () => {
           {/* <Route path="/profile" element={<Profile />} /> */}
         </Routes>
       </AnimatePresence>
+      <Analytics />
     </>
   );
 };
