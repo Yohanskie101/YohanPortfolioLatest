@@ -1,4 +1,4 @@
-import Grad_Pic from "../assets/grad_pic.jpg";
+import Grad_Pic from "../assets/new_profile.png";
 import { useInView } from "framer-motion";
 import { gsap } from "gsap";
 import React, { useRef, useEffect } from "react";
