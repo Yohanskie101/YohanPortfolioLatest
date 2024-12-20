@@ -14,7 +14,7 @@ function Introduction() {
         }}
       >
         <p className="font-for-intro font-semibold text-center ">
-          <span className="text-custom-green">Hey there, I'm Yohan!</span> I'm
+          <span className="text-custom-green">Hey there, I'm Yohan!</span> I am
            a passionate individual who loves to create
           dynamic and visually appealing websites.
         </p>
