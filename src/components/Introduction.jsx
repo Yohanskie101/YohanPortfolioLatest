@@ -15,7 +15,7 @@ function Introduction() {
       >
         <p className="font-for-intro font-semibold text-center ">
           <span className="text-custom-green">Hey there, I'm Yohan!</span> I'm
-          an aspiring front-end junior developer passionate about creating
+           passionate about creating
           dynamic and visually appealing websites.
         </p>
       </motion.div>
